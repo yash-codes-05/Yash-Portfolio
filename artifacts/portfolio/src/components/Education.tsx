@@ -7,10 +7,10 @@ export function Education() {
       id: "btech",
       type: "education",
       icon: <GraduationCap className="w-5 h-5" />,
-      title: "Bachelor of Technology — Computer Science & Engineering",
+      title: "Bachelor of Technology in Computer Science & Engineering",
       institution: "Shri Ramswaroop Memorial College of Engineering and Management",
       location: "Lucknow",
-      period: "2023 — 2027",
+      period: "2023 - 2027",
       detail: "Specializing in DevOps, cloud infrastructure, and software engineering fundamentals."
     },
     {
@@ -175,8 +175,8 @@ export function Education() {
             >
               <span className="text-primary text-xs uppercase tracking-widest block mb-3">Languages</span>
               <div className="flex gap-6 text-muted-foreground text-sm">
-                <span><span className="text-foreground font-medium">English</span> — Professional</span>
-                <span><span className="text-foreground font-medium">Hindi</span> — Native</span>
+                <span><span className="text-foreground font-medium">English</span>: Professional</span>
+                <span><span className="text-foreground font-medium">Hindi</span>: Native</span>
               </div>
             </motion.div>
           </div>

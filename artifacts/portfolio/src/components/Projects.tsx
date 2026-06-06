@@ -15,7 +15,7 @@ export function Projects() {
     {
       id: "olive-dental",
       title: "Olive Dental & Surgical",
-      description: "Professional website for a real dental clinic — fully responsive UI designed and developed from scratch. Managed deployment on Vercel with basic SEO setup to improve online visibility for the practice.",
+      description: "Professional website for a real dental clinic. Fully responsive UI designed and developed from scratch. Managed deployment on Vercel with basic SEO setup to improve online visibility for the practice.",
       stack: ["HTML", "CSS", "Vercel"],
       links: {
         live: "https://olive-dental.vercel.app/"
@@ -24,7 +24,7 @@ export function Projects() {
     {
       id: "event-management",
       title: "College Event Management System",
-      description: "Web application to manage college events and participant registrations end to end. Replaced manual processes with a digitized system — backend logic for event handling and a database for storing event and user data.",
+      description: "Web application to manage college events and participant registrations end to end. Replaced manual processes with a digitized system, with backend logic for event handling and a database for storing event and user data.",
       stack: ["HTML", "CSS", "Backend", "Database"],
       links: {
         github: "#"

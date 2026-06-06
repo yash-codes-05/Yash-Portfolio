@@ -6,12 +6,12 @@ export function About() {
     {
       icon: <Server className="w-6 h-6 text-primary" />,
       title: "CI/CD Automation",
-      description: "Designed and built end-to-end pipelines with Jenkins and Git hooks — from commit to production with zero manual steps."
+      description: "Designed and built end-to-end pipelines with Jenkins and Git hooks, from commit to production with zero manual steps."
     },
     {
       icon: <Activity className="w-6 h-6 text-accent" />,
       title: "Containerization",
-      description: "Docker-first mindset — consistent environments across dev and prod, no more 'works on my machine' surprises."
+      description: "Docker-first mindset: consistent environments across dev and prod, no more 'works on my machine' surprises."
     },
     {
       icon: <BookOpen className="w-6 h-6 text-primary" />,
@@ -47,17 +47,17 @@ export function About() {
             data-testid="text-about-description"
           >
             <p>
-              I'm a Computer Science and Engineering student at Shri Ramswaroop Memorial College of Engineering and Management, Lucknow — graduating in 2027 — with hands-on experience in DevOps, CI/CD pipeline automation, Docker containerization, and AWS EC2 cloud deployment.
+              I'm a Computer Science and Engineering student at Shri Ramswaroop Memorial College of Engineering and Management, Lucknow (graduating in 2027), with hands-on experience in DevOps, CI/CD pipeline automation, Docker containerization, and AWS EC2 cloud deployment.
             </p>
             <p>
-              I've delivered a live client website and built real-world automation projects using Jenkins, Git, Python, and Java. Passionate about scalable infrastructure, automation, and clean code — if it's manual, I automate it.
+              I've delivered a live client website and built real-world automation projects using Jenkins, Git, Python, and Java. Passionate about scalable infrastructure, automation, and clean code. If it's manual, I automate it.
             </p>
             <div className="p-4 border border-border bg-secondary/50 rounded-lg mt-8 font-mono text-sm">
               <span className="text-primary">$</span><span className="text-muted-foreground"> cat certifications.txt</span>
               <br />
               <span className="text-foreground/80 text-xs leading-relaxed">
                 DevOps Certification (Ongoing)<br />
-                Diploma in Python — 2023<br />
+                Diploma in Python (2023)<br />
                 Python Programming Essential Bootcamp<br />
                 Java Programming Essential Bootcamp
               </span>

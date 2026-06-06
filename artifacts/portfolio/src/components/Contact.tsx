@@ -22,7 +22,7 @@ export function Contact() {
           </h2>
 
           <p className="text-muted-foreground text-lg mb-10 max-w-lg mx-auto" data-testid="text-contact-description">
-            Looking for internship or entry-level DevOps / Software Engineering opportunities. My inbox is always open — whether it's a question about infrastructure, a project collab, or just to talk tech.
+            Looking for internship or entry-level DevOps / Software Engineering opportunities. My inbox is always open, whether it's a question about infrastructure, a project collab, or just to talk tech.
           </p>
 
           <a
