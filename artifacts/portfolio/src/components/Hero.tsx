@@ -4,7 +4,6 @@ import { Terminal, ChevronDown } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative min-h-[100dvh] flex items-center pt-20 overflow-hidden" id="hero" data-testid="section-hero">
-      {/* Abstract Background Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[20%] left-[10%] w-[40vw] h-[40vw] bg-primary/5 rounded-full blur-[120px]" />
         <div className="absolute bottom-[10%] right-[10%] w-[30vw] h-[30vw] bg-accent/5 rounded-full blur-[100px]" />
@@ -21,7 +20,7 @@ export function Hero() {
             data-testid="hero-badge"
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            System Online
+            Open to Opportunities
           </motion.div>
 
           <motion.h1
@@ -42,7 +41,7 @@ export function Hero() {
             className="text-xl md:text-2xl font-mono text-muted-foreground mb-8"
             data-testid="text-hero-subtitle"
           >
-            &gt; DevOps Engineer
+            &gt; Software Developer &amp; DevOps Engineer
           </motion.h2>
 
           <motion.p
@@ -52,7 +51,7 @@ export function Hero() {
             className="text-muted-foreground max-w-lg mb-10 text-lg"
             data-testid="text-hero-description"
           >
-            I build resilient infrastructure, automate complex workflows, and engineer systems that never sleep. If it's manual, I automate it.
+            B.Tech CSE student building real-world DevOps pipelines, containerized applications, and cloud-deployed systems. If it's manual, I automate it.
           </motion.p>
 
           <motion.div
@@ -64,17 +63,17 @@ export function Hero() {
             <a
               href="#projects"
               className="px-6 py-3 rounded-md bg-primary text-primary-foreground font-medium flex items-center gap-2 hover:bg-primary/90 transition-colors"
-              data-testid="button-view-systems"
+              data-testid="button-view-projects"
             >
               <Terminal className="w-4 h-4" />
-              View Systems
+              View Projects
             </a>
             <a
               href="#contact"
               className="px-6 py-3 rounded-md bg-secondary text-secondary-foreground border border-border font-medium hover:bg-secondary/80 transition-colors"
-              data-testid="button-initiate-contact"
+              data-testid="button-contact"
             >
-              Initiate Contact
+              Get In Touch
             </a>
           </motion.div>
         </div>
@@ -83,17 +82,22 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="relative hidden lg:block"
+          className="relative hidden lg:flex items-center justify-center"
         >
-          <div className="relative w-full aspect-square rounded-full flex items-center justify-center p-8">
+          <div className="relative w-72 h-72 flex items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-primary/20 animate-[spin_20s_linear_infinite]" />
-            <div className="absolute inset-4 rounded-full border border-accent/20 animate-[spin_15s_linear_infinite_reverse]" />
-            <img
-              src="/avatar.png"
-              alt="Yash Srivastava"
-              className="w-full h-full object-cover rounded-full mix-blend-screen opacity-90 filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
-              data-testid="img-hero-avatar"
-            />
+            <div className="absolute inset-6 rounded-full border border-accent/20 animate-[spin_15s_linear_infinite_reverse]" />
+            <div className="absolute inset-12 rounded-full border border-primary/10 animate-[spin_10s_linear_infinite]" />
+            <div className="w-40 h-40 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 flex items-center justify-center border border-primary/30 backdrop-blur-sm">
+              <span className="font-mono font-bold text-5xl text-primary">YS</span>
+            </div>
+          </div>
+
+          <div className="absolute top-4 right-4 font-mono text-xs text-muted-foreground/50 text-right leading-relaxed">
+            <div className="text-primary/60">// status</div>
+            <div>available: true</div>
+            <div>location: Lucknow</div>
+            <div>role: DevOps Eng.</div>
           </div>
         </motion.div>
       </div>
@@ -104,7 +108,7 @@ export function Hero() {
         transition={{ delay: 1, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground"
       >
-        <span className="font-mono text-xs uppercase tracking-widest">Scroll to initialize</span>
+        <span className="font-mono text-xs uppercase tracking-widest">Scroll to explore</span>
         <ChevronDown className="w-4 h-4 animate-bounce" />
       </motion.div>
     </section>

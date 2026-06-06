@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
-import { Server, Activity, Lock } from "lucide-react";
+import { Server, Activity, BookOpen } from "lucide-react";
 
 export function About() {
   const principles = [
     {
       icon: <Server className="w-6 h-6 text-primary" />,
-      title: "Infrastructure as Code",
-      description: "Everything in version control. Reproducible environments from development to production without drift."
+      title: "CI/CD Automation",
+      description: "Designed and built end-to-end pipelines with Jenkins and Git hooks — from commit to production with zero manual steps."
     },
     {
       icon: <Activity className="w-6 h-6 text-accent" />,
-      title: "Observability First",
-      description: "You can't fix what you can't see. Comprehensive metrics, logging, and tracing built into the foundation."
+      title: "Containerization",
+      description: "Docker-first mindset — consistent environments across dev and prod, no more 'works on my machine' surprises."
     },
     {
-      icon: <Lock className="w-6 h-6 text-primary" />,
-      title: "Secure by Default",
-      description: "Security isn't an afterthought. It's integrated into the CI/CD pipeline and deployment architecture."
+      icon: <BookOpen className="w-6 h-6 text-primary" />,
+      title: "Always Learning",
+      description: "B.Tech CSE student (2027) actively pursuing DevOps certification while shipping real-world projects in production."
     }
   ];
 
@@ -32,7 +32,7 @@ export function About() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-4" data-testid="text-about-title">
             <span className="text-primary font-mono text-xl md:text-2xl">01.</span>
-            Architecture Philosophy
+            About Me
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent rounded-full" />
         </motion.div>
@@ -47,15 +47,20 @@ export function About() {
             data-testid="text-about-description"
           >
             <p>
-              I bridge the gap between development and operations. My goal is to create seamless, automated pipelines that allow developers to ship features faster while maintaining ironclad reliability.
+              I'm a Computer Science and Engineering student at Shri Ramswaroop Memorial College of Engineering and Management, Lucknow — graduating in 2027 — with hands-on experience in DevOps, CI/CD pipeline automation, Docker containerization, and AWS EC2 cloud deployment.
             </p>
             <p>
-              I don't just maintain servers; I build platforms. By treating infrastructure as software, I eliminate manual toil and create scalable systems capable of handling massive traffic spikes without breaking a sweat.
+              I've delivered a live client website and built real-world automation projects using Jenkins, Git, Python, and Java. Passionate about scalable infrastructure, automation, and clean code — if it's manual, I automate it.
             </p>
             <div className="p-4 border border-border bg-secondary/50 rounded-lg mt-8 font-mono text-sm">
-              <span className="text-primary">~</span> <span className="text-muted-foreground">uptime</span>
+              <span className="text-primary">$</span><span className="text-muted-foreground"> cat certifications.txt</span>
               <br />
-              <span className="text-foreground">99.999% reliability achieved across 500+ microservices</span>
+              <span className="text-foreground/80 text-xs leading-relaxed">
+                DevOps Certification (Ongoing)<br />
+                Diploma in Python — 2023<br />
+                Python Programming Essential Bootcamp<br />
+                Java Programming Essential Bootcamp
+              </span>
             </div>
           </motion.div>
 
@@ -70,7 +75,7 @@ export function About() {
                 className="flex gap-4 p-6 rounded-xl border border-border bg-card/50 hover:bg-card hover:border-primary/50 transition-all group"
                 data-testid={`card-principle-${idx}`}
               >
-                <div className="mt-1 p-2 bg-background rounded-lg border border-border group-hover:scale-110 transition-transform">
+                <div className="mt-1 p-2 bg-background rounded-lg border border-border group-hover:scale-110 transition-transform shrink-0">
                   {principle.icon}
                 </div>
                 <div>

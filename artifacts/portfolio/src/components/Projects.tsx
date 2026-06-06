@@ -4,39 +4,37 @@ import { FolderGit2, ExternalLink, Github } from "lucide-react";
 export function Projects() {
   const projects = [
     {
-      id: "nexus-deploy",
-      title: "Nexus Deploy",
-      description: "An enterprise-grade GitOps pipeline orchestration tool. Automates the deployment of hundreds of microservices across multiple Kubernetes clusters using ArgoCD and Tekton.",
-      stack: ["Kubernetes", "ArgoCD", "Go", "Tekton", "Terraform"],
+      id: "cicd-pipeline",
+      title: "Automated CI/CD Pipeline",
+      description: "End-to-end CI/CD pipeline using Jenkins for automated build, testing, and deployment. Containerized with Docker for consistent environments, deployed on AWS EC2 with Git-triggered automation and integrated monitoring and logging.",
+      stack: ["Jenkins", "Docker", "AWS EC2", "Git"],
       links: {
-        github: "#",
-        live: "#"
+        github: "#"
       }
     },
     {
-      id: "meshops",
-      title: "MeshOps",
-      description: "Automated service mesh configuration operator for Istio. Dynamically adjusts routing rules and mTLS policies based on real-time traffic metrics and security posture.",
-      stack: ["Istio", "Envoy", "Python", "Prometheus", "Helm"],
+      id: "olive-dental",
+      title: "Olive Dental & Surgical",
+      description: "Professional website for a real dental clinic — fully responsive UI designed and developed from scratch. Managed deployment on Vercel with basic SEO setup to improve online visibility for the practice.",
+      stack: ["HTML", "CSS", "Vercel"],
       links: {
-        github: "#",
+        live: "https://olive-dental.vercel.app/"
       }
     },
     {
-      id: "infragraph",
-      title: "InfraGraph",
-      description: "Terraform state visualization and drift detection platform. Parses remote state files to generate interactive architecture diagrams and alerts on manual infrastructure changes.",
-      stack: ["React", "Node.js", "Terraform", "AWS", "GraphQL"],
+      id: "event-management",
+      title: "College Event Management System",
+      description: "Web application to manage college events and participant registrations end to end. Replaced manual processes with a digitized system — backend logic for event handling and a database for storing event and user data.",
+      stack: ["HTML", "CSS", "Backend", "Database"],
       links: {
-        github: "#",
-        live: "#"
+        github: "#"
       }
     },
     {
-      id: "sentinel",
-      title: "Sentinel Metrics",
-      description: "Distributed Prometheus metrics aggregator with dynamic alerting. Automatically generates Grafana dashboards and routing rules when new services are deployed to the cluster.",
-      stack: ["Prometheus", "Grafana", "Alertmanager", "Bash", "Docker"],
+      id: "personal-portfolio",
+      title: "Personal Portfolio Website",
+      description: "Responsive personal portfolio to showcase technical skills and projects with a clean UI. Built to demonstrate front-end proficiency and provide a central hub for professional presence online.",
+      stack: ["HTML", "CSS"],
       links: {
         live: "#"
       }
@@ -55,7 +53,7 @@ export function Projects() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-4" data-testid="text-projects-title">
             <span className="text-primary font-mono text-xl md:text-2xl">03.</span>
-            System Architecture
+            Projects
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent rounded-full" />
         </motion.div>
@@ -78,23 +76,35 @@ export function Projects() {
                   </div>
                   <div className="flex gap-4">
                     {project.links.github && (
-                      <a href={project.links.github} className="text-muted-foreground hover:text-primary transition-colors" data-testid={`link-github-${project.id}`}>
+                      <a
+                        href={project.links.github}
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        data-testid={`link-github-${project.id}`}
+                        aria-label={`GitHub - ${project.title}`}
+                      >
                         <Github className="w-5 h-5" />
                       </a>
                     )}
                     {project.links.live && (
-                      <a href={project.links.live} className="text-muted-foreground hover:text-primary transition-colors" data-testid={`link-live-${project.id}`}>
+                      <a
+                        href={project.links.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        data-testid={`link-live-${project.id}`}
+                        aria-label={`Live site - ${project.title}`}
+                      >
                         <ExternalLink className="w-5 h-5" />
                       </a>
                     )}
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                
-                <p className="text-muted-foreground mb-6">
+
+                <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
                   {project.description}
                 </p>
               </div>
