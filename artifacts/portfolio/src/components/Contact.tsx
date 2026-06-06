@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Terminal, Mail, MapPin, Phone } from "lucide-react";
+import { Terminal, Mail, MapPin, Phone, Github } from "lucide-react";
 
 export function Contact() {
   return (
@@ -25,14 +25,26 @@ export function Contact() {
             Looking for internship or entry-level DevOps / Software Engineering opportunities. My inbox is always open, whether it's a question about infrastructure, a project collab, or just to talk tech.
           </p>
 
-          <a
-            href="mailto:yashsira@gmail.com"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-md hover:bg-primary/90 transition-all hover:-translate-y-1 mb-12"
-            data-testid="link-contact-email"
-          >
-            <Mail className="w-5 h-5" />
-            yashsira@gmail.com
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+            <a
+              href="mailto:yashsira@gmail.com"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-md hover:bg-primary/90 transition-all hover:-translate-y-1"
+              data-testid="link-contact-email"
+            >
+              <Mail className="w-5 h-5" />
+              yashsira@gmail.com
+            </a>
+            <a
+              href="https://github.com/yash-codes-05"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-secondary border border-border text-foreground font-bold rounded-md hover:border-primary/50 hover:bg-secondary/80 transition-all hover:-translate-y-1"
+              data-testid="link-contact-github"
+            >
+              <Github className="w-5 h-5" />
+              GitHub
+            </a>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, y: 10 }}
