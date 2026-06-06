@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Terminal, ChevronDown } from "lucide-react";
+import avatarImg from "@assets/IMG-20260406-WA0000_1780741307102.jpg";
 
 export function Hero() {
   return (
@@ -88,8 +89,13 @@ export function Hero() {
             <div className="absolute inset-0 rounded-full border border-primary/20 animate-[spin_20s_linear_infinite]" />
             <div className="absolute inset-6 rounded-full border border-accent/20 animate-[spin_15s_linear_infinite_reverse]" />
             <div className="absolute inset-12 rounded-full border border-primary/10 animate-[spin_10s_linear_infinite]" />
-            <div className="w-40 h-40 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 flex items-center justify-center border border-primary/30 backdrop-blur-sm">
-              <span className="font-mono font-bold text-5xl text-primary">YS</span>
+            <div className="w-48 h-48 rounded-full border-2 border-primary/40 overflow-hidden shadow-[0_0_40px_rgba(0,200,255,0.15)]">
+              <img
+                src={avatarImg}
+                alt="Yash Srivastava"
+                className="w-full h-full object-cover object-top"
+                data-testid="img-hero-avatar"
+              />
             </div>
           </div>
 
