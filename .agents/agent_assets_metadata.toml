@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "37vNxztKMAb0CJGuZJIBC"
+uri = "file://artifacts/portfolio/public/avatar.png"
+type = "image"
+title = "Cybernetic technical abstract avatar"
