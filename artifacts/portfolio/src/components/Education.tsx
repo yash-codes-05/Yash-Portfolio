@@ -21,7 +21,7 @@ export function Education() {
       institution: "Central Academy",
       location: "Lucknow",
       period: "2023",
-      detail: "UP Board"
+      detail: "CBSE Board"
     },
     {
       id: "class10",
@@ -31,7 +31,7 @@ export function Education() {
       institution: "Central Academy",
       location: "Lucknow",
       period: "2021",
-      detail: "UP Board"
+      detail: "CBSE Board"
     }
   ];
 
