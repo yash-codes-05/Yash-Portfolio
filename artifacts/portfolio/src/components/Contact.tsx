@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Terminal, Mail, MapPin, Phone, Github } from "lucide-react";
+import { Terminal, Mail, MapPin, Phone, Github, Linkedin } from "lucide-react";
 
 export function Contact() {
   return (
@@ -43,6 +43,16 @@ export function Contact() {
             >
               <Github className="w-5 h-5" />
               GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yash-srivastava-422bb23a5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-secondary border border-border text-foreground font-bold rounded-md hover:border-primary/50 hover:bg-secondary/80 transition-all hover:-translate-y-1"
+              data-testid="link-contact-linkedin"
+            >
+              <Linkedin className="w-5 h-5" />
+              LinkedIn
             </a>
           </div>
 
