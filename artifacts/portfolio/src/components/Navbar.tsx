@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Terminal, Code, Cpu, Activity, Mail } from "lucide-react";
+import { Terminal, Code, Cpu, Activity, Mail, GraduationCap } from "lucide-react";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +17,7 @@ export function Navbar() {
     { name: "About", href: "#about", icon: <Code className="w-4 h-4" /> },
     { name: "Stack", href: "#skills", icon: <Cpu className="w-4 h-4" /> },
     { name: "Projects", href: "#projects", icon: <Activity className="w-4 h-4" /> },
+    { name: "Education", href: "#education", icon: <GraduationCap className="w-4 h-4" /> },
     { name: "Contact", href: "#contact", icon: <Mail className="w-4 h-4" /> },
   ];
 
