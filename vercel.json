@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter @workspace/portfolio run build",
-  "outputDirectory": "dist",
-  "installCommand": "cd ../.. && pnpm install",
+  "outputDirectory": "portfolio-out",
+  "installCommand": "pnpm install",
   "framework": null
 }
