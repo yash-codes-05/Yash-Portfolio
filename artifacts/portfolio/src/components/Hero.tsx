@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Terminal, ChevronDown } from "lucide-react";
+import { Terminal, ChevronDown, Download } from "lucide-react";
 import avatarImg from "@assets/IMG-20260406-WA0000_1780741307102.jpg";
 
 export function Hero() {
@@ -75,6 +75,15 @@ export function Hero() {
               data-testid="button-contact"
             >
               Get In Touch
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Yash_Srivastava_Resume.pdf"
+              className="px-6 py-3 rounded-md border border-primary/40 text-primary font-medium flex items-center gap-2 hover:bg-primary/10 transition-colors"
+              data-testid="button-download-resume"
+            >
+              <Download className="w-4 h-4" />
+              Resume
             </a>
           </motion.div>
         </div>

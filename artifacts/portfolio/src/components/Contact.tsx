@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Terminal, Mail, MapPin, Phone, Github, Linkedin } from "lucide-react";
+import { Terminal, Mail, MapPin, Phone, Github, Linkedin, Download } from "lucide-react";
 
 export function Contact() {
   return (
@@ -53,6 +53,15 @@ export function Contact() {
             >
               <Linkedin className="w-5 h-5" />
               LinkedIn
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Yash_Srivastava_Resume.pdf"
+              className="inline-flex items-center gap-2 px-8 py-4 border border-primary/40 text-primary font-bold rounded-md hover:bg-primary/10 transition-all hover:-translate-y-1"
+              data-testid="link-download-resume"
+            >
+              <Download className="w-5 h-5" />
+              Download Resume
             </a>
           </div>
 
